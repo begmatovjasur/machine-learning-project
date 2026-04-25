@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import dill 
+import pickle
 import os
 import sys
 from sklearn.metrics import r2_score
@@ -31,7 +32,7 @@ def evaluate_models(x_train, y_train, x_test, y_test, models, parameters):
 
             model.set_params(**gs.best_params_)
             model.fit(x_train, y_train)
-            
+
             y_train_pred = model.predict(x_train)
 
             y_test_pred = model.predict(x_test)
@@ -43,5 +44,12 @@ def evaluate_models(x_train, y_train, x_test, y_test, models, parameters):
 
         return report
     
+    except Exception as e:
+        raise CustomException(e, sys)
+    
+def load_object(file_path):
+    try:
+        with open(file_path, 'rb') as file_obj:                return pickle.load(file_obj)
+
     except Exception as e:
         raise CustomException(e, sys)

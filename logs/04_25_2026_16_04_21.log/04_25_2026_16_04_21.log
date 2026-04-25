@@ -1,0 +1,8 @@
+[2026-04-25 16:04:21,446] 97 werkzeug - WARNING -  * Debugger is active!
+[2026-04-25 16:04:21,454] 97 werkzeug - INFO -  * Debugger PIN: 656-546-139
+[2026-04-25 16:04:31,345] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:04:31] "GET /predictdata HTTP/1.1" 200 -
+[2026-04-25 16:06:04,840] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:06:04] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-04-25 16:06:04,967] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:06:04] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2026-04-25 16:06:04,967] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:06:04] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2026-04-25 16:06:05,023] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:06:05] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=dmVZl3o5FBspCvMWpoA0 HTTP/1.1" 200 -
+[2026-04-25 16:06:05,102] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 16:06:05] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
